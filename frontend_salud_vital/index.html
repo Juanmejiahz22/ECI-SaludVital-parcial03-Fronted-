@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ECI Salud Vital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ECI Salud Vital</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Historial de Citas</a>
+    </nav>
+  </header>
+
+  <h2>Especialidades Médicas</h2>
+  <div class="especialidades">
+    <div class="especialidad" onclick="mostrarDetalle('Medicina General')">
+      <img src="medicina.jpg" alt="Medicina General">
+      <p>Medicina General</p>
+    </div>
+    <div class="especialidad" onclick="mostrarDetalle('Psicología')">
+      <img src="psicologia.jpg" alt="Psicología">
+      <p>Psicología</p>
+    </div>
+    <div class="especialidad" onclick="mostrarDetalle('Ortopedia')">
+      <img src="ortopedia.jpg" alt="Ortopedia">
+      <p>Ortopedia</p>
+    </div>
+    <div class="especialidad" onclick="mostrarDetalle('Odontología')">
+      <img src="odontologia.jpg" alt="Odontología">
+      <p>Odontología</p>
+    </div>
+  </div>
+
+  <div id="detalleEspecialidad" class="detalle"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
